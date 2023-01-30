@@ -12,7 +12,7 @@
 			day: 'يوم',
 			days: 'أيام',
 			hour: 'ساعة',
-			hours: 'ساعات',
+			hours: 'ساعة',
 			minute: 'دقيقة',
 			minutes: 'دقيقة',
 			second: 'ثانية',
