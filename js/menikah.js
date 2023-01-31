@@ -20,7 +20,17 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+
+  pageScroll();
 });
+
+function pageScroll() {
+if(window.scrollY > 650)
+return;
+
+  window.scrollBy(0,1);
+  scrolldelay = setTimeout(pageScroll,15);
+}
 
 // Smooth Anchor Scrolling
 $(document).on("click", 'a[href^="#"]', function(event) {
