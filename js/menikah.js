@@ -23,8 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   pageScroll();
 
+  play();
 });
 
+function play() {
+  var audio = new Audio('sounds/AlRum_30_21.mp3');
+  audio.play();
+}
 
 function pageScroll() {
 if(window.scrollY > 650)
