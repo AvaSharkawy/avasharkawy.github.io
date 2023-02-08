@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   pageScroll();
+
 });
+
 
 function pageScroll() {
 if(window.scrollY > 650)
