@@ -1,5 +1,9 @@
 // Get that hamburger menu cookin' //
 
+window.addEventListener('touchstart', function() {
+  this.alert("touched");
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(
@@ -23,11 +27,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
   pageScroll();
 
-  play();
+  // play();
+  var btn = document.getElementById("btnPlay"); 
+  btn.click();
 });
 
+const audio = new Audio('sounds/AlRum_30_21.mp3');
+function playMp3() { 
+  audio.play(); 
+} 
 function play() {
-  var audio = new Audio('sounds/AlRum_30_21.mp3');
   audio.play();
 }
 
