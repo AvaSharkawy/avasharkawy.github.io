@@ -2,6 +2,7 @@
 
 window.addEventListener('touchstart', function() {
   playMp3();
+  pageTouched = true;
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -44,9 +45,10 @@ function play() {
     audioPlayed = true;
   }
 }
+const pageTouched = false;
 
 function pageScroll() {
-if(window.scrollY > 650)
+if(window.scrollY > 650 || pageTouched == true)
 return;
 
   window.scrollBy(0,1);
