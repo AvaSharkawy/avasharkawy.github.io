@@ -1,7 +1,7 @@
 // Get that hamburger menu cookin' //
 
 window.addEventListener('touchstart', function() {
-  this.alert("touched");
+  playMp3();
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -28,16 +28,21 @@ document.addEventListener("DOMContentLoaded", function() {
   pageScroll();
 
   // play();
-  var btn = document.getElementById("btnPlay"); 
-  btn.click();
+  
 });
-
+const audioPlayed = false;
 const audio = new Audio('sounds/AlRum_30_21.mp3');
-function playMp3() { 
-  audio.play(); 
-} 
+function playMp3() {
+  if (audioPlayed == false) {
+    audio.play();
+    audioPlayed = true;
+  }
+}
 function play() {
-  audio.play();
+  if (audioPlayed == false) {
+    audio.play();
+    audioPlayed = true;
+  }
 }
 
 function pageScroll() {
