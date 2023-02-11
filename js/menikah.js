@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // play();
   
 });
-const audioPlayed = false;
+var audioPlayed = false;
 const audio = new Audio('sounds/AlRum_30_21.mp3');
 function playMp3() {
   if (audioPlayed == false) {
@@ -45,10 +45,10 @@ function play() {
     audioPlayed = true;
   }
 }
-const pageTouched = false;
+var pageTouched = false;
 
 function pageScroll() {
-if(window.scrollY > 650 || pageTouched == true)
+if(window.scrollY > 650 || pageTouched)
 return;
 
   window.scrollBy(0,1);
