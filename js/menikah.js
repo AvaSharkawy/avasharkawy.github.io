@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
 });
 var audioPlayed = false;
-const audio = new Audio('sounds/AlRum_30_21.mp3');
+const audio = new Audio('image/AlRum_30_21.mp3');
 function playMp3() {
   if (audioPlayed == false) {
     audio.play();
