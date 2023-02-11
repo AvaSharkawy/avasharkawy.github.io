@@ -1,8 +1,13 @@
 // Get that hamburger menu cookin' //
 
-window.addEventListener('touchstart', function() {
+document.addEventListener('touchstart', function() {
   playMp3();
   pageTouched = true;
+});
+
+document.addEventListener('click', function(){
+    playMp3();
+    pageTouched = true;
 });
 
 document.addEventListener("DOMContentLoaded", function() {
